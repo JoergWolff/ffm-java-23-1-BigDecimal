@@ -8,10 +8,18 @@ public class Account {
     private BigDecimal accountBalance;
     private Client client;
 
-    public String getAccountNumber() {
-        return accountNumber;
+    public Account(String accountNumber, BigDecimal accountBalance, Client client) {
+        this.accountNumber = accountNumber;
+        this.accountBalance = accountBalance;
+        this.client = client;
     }
 
+    public void addToAccountBalance(BigDecimal money){
+        this.accountBalance.add(money);
+    }
+    public void subtractFromAccoutBalace(BigDecimal money){
+        this.accountBalance.subtract(money)
+;    }
     @Override
     public String toString() {
         return "Account{" +
@@ -34,6 +42,9 @@ public class Account {
         return Objects.hash(accountNumber, accountBalance, client);
     }
 
+    public String getAccountNumber() {
+        return accountNumber;
+    }
     public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
