@@ -1,47 +1,37 @@
 package de.wolffclan;
 
 import java.math.BigDecimal;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 public class Account {
     private String accountNumber;
     private BigDecimal accountBalance;
-    private Client client;
+    private Set<Client> clients = new HashSet<>();
+
+    public Account() {
+    }
+
+    public Account(String accountNumber, BigDecimal accountBalance, Set<Client> clients) {
+        this.accountNumber = accountNumber;
+        this.accountBalance = accountBalance;
+        this.clients = clients;
+    }
 
     public Account(String accountNumber, BigDecimal accountBalance, Client client) {
         this.accountNumber = accountNumber;
         this.accountBalance = accountBalance;
-        this.client = client;
+        this.clients.add(client);
     }
 
     public void addToAccountBalance(BigDecimal money){
-        this.accountBalance.add(money);
-    }
-    public void subtractFromAccoutBalace(BigDecimal money){
-        this.accountBalance.subtract(money)
-;    }
-    @Override
-    public String toString() {
-        return "Account{" +
-                "accountNumber='" + accountNumber + '\'' +
-                ", accountBalance=" + accountBalance +
-                ", client=" + client +
-                '}';
+        this.setAccountBalance(this.accountBalance.add(money));
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Account account = (Account) o;
-        return Objects.equals(accountNumber, account.accountNumber) && Objects.equals(accountBalance, account.accountBalance) && Objects.equals(client, account.client);
+    public void subtractFromAccountBalance(BigDecimal money) {
+        this.setAccountBalance(this.accountBalance.subtract(money));
     }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(accountNumber, accountBalance, client);
-    }
-
     public String getAccountNumber() {
         return accountNumber;
     }
@@ -57,11 +47,33 @@ public class Account {
         this.accountBalance = accountBalance;
     }
 
-    public Client getClient() {
-        return client;
+    public Set<Client> getClients() {
+        return clients;
     }
 
-    public void setClient(Client client) {
-        this.client = client;
+    public void setClients(Set<Client> clients) {
+        this.clients = clients;
+    }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "accountNumber='" + accountNumber + '\'' +
+                ", accountBalance=" + accountBalance +
+                ", client=" + clients +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Account account = (Account) o;
+        return Objects.equals(accountNumber, account.accountNumber) && Objects.equals(accountBalance, account.accountBalance) && Objects.equals(clients, account.clients);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(accountNumber, accountBalance, clients);
     }
 }

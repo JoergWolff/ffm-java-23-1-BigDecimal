@@ -4,22 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74d050cf-ce4f-42f5-b92b-1d0f1dae2154" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/wolffclan/Main.java" afterDir="false" />
+    <list default="true" id="74d050cf-ce4f-42f5-b92b-1d0f1dae2154" name="Changes" comment="make changes on README">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wolffclan/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wolffclan/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wolffclan/BankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wolffclan/BankService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wolffclan/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wolffclan/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 7
@@ -51,11 +59,51 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1693830406055</updated>
-      <workItem from="1693830407331" duration="776000" />
+      <workItem from="1693830407331" duration="16024000" />
     </task>
+    <task id="LOCAL-00001" summary="create record Client and clss Account">
+      <option name="closed" value="true" />
+      <created>1693832041113</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693832041114</updated>
+    </task>
+    <task id="LOCAL-00002" summary="create methods in Account">
+      <option name="closed" value="true" />
+      <created>1693832537343</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693832537344</updated>
+    </task>
+    <task id="LOCAL-00003" summary="create methods newAccount">
+      <option name="closed" value="true" />
+      <created>1693834322892</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693834322892</updated>
+    </task>
+    <task id="LOCAL-00004" summary="make changes on README">
+      <option name="closed" value="true" />
+      <created>1693834631657</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693834631657</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create record Client and clss Account" />
+    <MESSAGE value="create methods in Account" />
+    <MESSAGE value="create methods newAccount" />
+    <MESSAGE value="make changes on README" />
+    <option name="LAST_COMMIT_MESSAGE" value="make changes on README" />
   </component>
 </project>
